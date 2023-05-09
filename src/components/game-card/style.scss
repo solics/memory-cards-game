@@ -1,0 +1,74 @@
+.game-card {
+  background-color: transparent;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  height: 260px;
+  perspective: 1000px;
+
+  .game-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 1;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  &.active .game-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .game-card-front,
+  .game-card-back {
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  &.disable-events {
+    pointer-events: none;
+  }
+
+  .game-card-front {
+    text-align: left;
+    transform: rotateY(180deg);
+    padding: 15px 15px 20px 15px;
+    background-color: white;
+    & > img {
+      border-radius: 8px;
+      width: 100%;
+      margin-bottom: 10px;
+      max-height: 80%;
+      object-fit: cover;
+    }
+    & .game-card-front__name {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    & .game-card-front__species {
+      font-size: 10px;
+    }
+  }
+
+  .game-card-back {
+    background-color: #a2f2f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 90%;
+    }
+  }
+
+  &.hidden {
+    /*opacity: 0.1; si se quiere que se vea la card boca arriba y no dejar el espacio en blanco*/
+    opacity: 0;
+  }
+}

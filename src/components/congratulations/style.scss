@@ -1,0 +1,19 @@
+.congratulations {
+  width: 600px;
+  margin: 0 auto;
+  .congratulations__title {
+    font-size: 48px;
+    margin: 15px 0;
+    font-weight: 700;
+  }
+  .congratulations__subtitle {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .congratulations__actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+}

@@ -1,0 +1,35 @@
+.layout {
+  background-color: #1c1d3b;
+  padding: 40px 10px;
+  min-height: 100vh;
+  & .content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    .heading {
+      background-color: #d8e054;
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      width: 240px;
+      text-align: center;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .logo {
+      width: 50%;
+      margin: 0 auto;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+  & main {
+    background-color: #fffac2;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}

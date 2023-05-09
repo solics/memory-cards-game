@@ -1,0 +1,17 @@
+.custom-button {
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 80px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  cursor: pointer;
+  &.primary {
+    background-color: #a2f2f9;
+    box-shadow: -4px 5px 0px #d8e04c;
+  }
+  &.secondary {
+    background-color: #d8e054;
+    box-shadow: -4px 5px 0px #a2f2f9;
+  }
+}

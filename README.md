@@ -3,15 +3,19 @@
 ## Setup del proyecto:
 
 ### Clonar el repo:
+
 `git clone https://github.com/solics/react-ts-boilerplate.git`
 
 ### Instalación de dependencias:
+
 `npm install`
 
 ### Ejecutar el proyecto
+
 `npm run dev`
 
 ### Ejecutar los tests
+
 `npm test`
 
 ## Razonamiento detrás del proyecto
@@ -22,3 +26,5 @@
 - Elegir el método de consumo de servicios, en este caso fue ApolloClient para consumir un api GraphQL
 - Pensar en la arquitectura de archivos del proyecto
 - Como darle estilos a los componentes/pages
+
+## [Ver demo](https://melodious-empanada-7b2e46.netlify.app)

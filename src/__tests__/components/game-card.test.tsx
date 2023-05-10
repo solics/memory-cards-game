@@ -1,4 +1,4 @@
-import { act, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import GameCard from '../../components/game-card'
 
 const renderComponent = (isHome: boolean, isActive: boolean) => {
